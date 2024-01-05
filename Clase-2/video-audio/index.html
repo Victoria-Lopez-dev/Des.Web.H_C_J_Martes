@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Video- Audio</title>
+</head>
+<body onload="mostrarDur()">
+    <h1>Video - Audio</h1>
+
+    <section>
+        <video poster="./imagen1.jpeg">
+            <source src="./videos/video2.mp4" type="video/mp4"/>
+            <source src="./videos/video2.ogv" type="video/ogv"/>
+        </video>
+
+        <div class="barra-rep">
+            <div class="botonera">
+                <button onclick="reproducir()">play</button>
+                <button onclick="pausar()">pausa</button>
+                <button onclick="mutear()">mute</button>                
+            </div>
+            
+            <div class="seccion-duracion">
+                <p>
+                    <span id="tiempoReal">00:00</span>/
+                    <span id="duracion"></span>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+  
+    <!-- <audio src=""></audio> -->
+
+    <!-- 
+        atributos:
+        controls -> controles predeterminados video|audio
+        poster -> poner una imagen de fondo antes del inicio de la reproduccion .
+    -->
+
+    <script src="./video-audio.js"></script>
+</body>
+</html>
+
+<!-- etiqueta de video y audio-> tenemos los archivos de video o audio (mp4, egg,egv,mp3)-->

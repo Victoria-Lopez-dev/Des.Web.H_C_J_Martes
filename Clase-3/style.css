@@ -1,0 +1,39 @@
+section{
+    background-color: rgb(245, 157, 245);
+    height: 80vh;
+    display: flex;
+    /* flex-direction:row-reverse ; */
+    align-items: center;
+    /*alinea de manera vertical(row) o horizontal (column)*/
+    justify-content:center;
+       /*alinea de manera horizontal(row) o vertical (column)*/
+    gap:30px ;
+    /* flex-wrap: wrap; */
+    /* flex-flow: direction wrap*/
+    flex-flow: row wrap;
+    
+}
+.tarjeta{
+    width: 300px;
+    border: 2px solid black;
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dos{
+    align-self: flex-start ;/* justify-self*/
+    /* margin-bottom: 40px; */
+   order: 6;
+    background-color: darkcyan;
+}
+img{
+    width: 100%;
+}
+h2,p{
+    width: fit-content;
+}
+
+/* flexbox - grid -> asignamos en el elemento padre display y esto nos permite tanto indicarle a los hijos como comportarse de manera general y a cada uno de ellos si queres alguna posicion en particular 
+
+trata a sus hijos como una gran "tira" : fila o columna */

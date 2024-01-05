@@ -1,0 +1,68 @@
+/*
+selector{
+    propiedad:valor,
+    propiedad:valor
+    ..
+}
+
+tipo de selectores : 
+. -> clases a todo elemento con dicha clase le va a aplicar dichas propiedades
+
+# -> id que aplica la/s propiedad/es al elemento con ese id.
+
+etiqueta -> aplica a toda etiqueta con ese nombre que encuentre en el html
+*/
+:root{
+    --colorAzul:rgb(65, 65, 147);
+    --distancia:16px;
+}
+
+#titulo{
+    color: #333333;
+}
+
+.subtitulo{
+    background-color: var( --colorAzul);
+    width: 50% ;/* px | % */
+    height: 20vh;
+    color: gold;
+    margin-top: var(--distancia);
+}
+li{
+    border: 2px solid black;
+    padding: var(--distancia);;
+}
+ul{
+    list-style-type: none;
+}
+ol{
+    list-style-type:upper-latin
+}
+.subtitulo:hover{
+    background-color: #F90;
+    border: 3px solid violet;
+}
+
+.subtitulo:active{
+    color: aquamarine;
+}
+/*
+
+width -> propiedad de ancho
+height -> alto de un elemento
+
+rojo verde azul
+*/
+/*
+gerarquias en CSS 
+id>class>tarjeta mayor a menor prioridad
+*/
+/*
+pseoudoclases
+
+selector:pseudoclase{
+    propiedad:valor
+}
+
+display -> flex |grid | block |inline-block | none
+*/

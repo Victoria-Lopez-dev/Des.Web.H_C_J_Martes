@@ -1,0 +1,21 @@
+video{
+    width: 500px;
+}
+section{
+    width: 500px;
+    padding: 2px;
+    background-color: darkmagenta;
+}
+.barra-rep{
+    padding: 5px;
+    background-color: pink;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: darkolivegreen;
+    color: white;
+}

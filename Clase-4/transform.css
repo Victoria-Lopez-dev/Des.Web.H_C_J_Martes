@@ -1,0 +1,81 @@
+.padre{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    perspective: 800px;
+    background-color: darkgoldenrod;
+}
+.cubo{
+    width: 200px;
+    height: 200px;
+    border: 2px solid violet;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    font-size: 30px;
+}
+
+.translate{
+    background-color: pink;
+    transition: transform 2s;
+}
+
+#checkbox:checked +.translate{
+    /* x,y */
+    transform: translateZ(-100px);
+    /* transform: translateX(20px); */
+    background-color: turquoise;
+    /* transition: all 2s; */
+}
+
+
+section>h2{
+    color: red;
+}
+
+.rotate{
+    background-color: greenyellow;
+    transform: rotate(-45deg);
+    transition: transform 5s;
+    /* unidades -> deg (degree -> grados) + girar hacia la derecha ; - gira hacia la izquierda*/
+}
+.girar{
+    transform:rotateY(60deg);
+}
+
+.scale{
+    /*scale(x,y) scaleX(x) scaleY(y) -> unidades numeros sin unidad*/
+    transform: scale(2,0.5);
+    background-color: chocolate;
+}
+.skew{
+    /* unidades deg (degree -grados) skewX(x) skewY(y) skew(x,y)*/
+    transform: skew(45deg,20deg);
+    background-color: lightcyan;
+}
+
+.combo{
+    background-color: indianred;
+}
+.combinado{
+    transform: rotate(40deg) translateX(400px);
+    transition: transform 5s;
+}
+
+/* selectores anidados */
+/*
+
+    + -> un hermano siguiente 
+    ~ -> un elemento hermano 
+    > -> el hijo de un cierto elemento
+*/
+/* 
+    transition -> hace progresivo los cambios en los estilos
+
+    podemos colocarlo tanto dentro de la pseudoclase como del selector.
+    dentro de la pseudoclase lo hace solo en un sentido la progrecion, y en en ambos
+
+
+    3D -> perspective (perspectiva) toma como volar unidades de distancia.
+    propiedad perspective va en el elemento padre e indicamos la distancia del elemento "a la pantalla " 
+        perspective-origin -> indica la ubicacion de donde miramos al elemento : center-top-bottom ;
+*/

@@ -1,0 +1,68 @@
+.padre{
+    background-color:crimson ;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+    perspective-origin: top;
+}
+.hijo{
+    background-color: lightpink;
+    width: 300px;
+    height: 300px;
+    transform: rotateY(40deg);
+    transform-style: preserve-3d; /*extendimos la perspectiva al nieto*/
+}
+.nieto{
+    background-color:lightseagreen;
+    width: 300px;
+    height: 300px;
+    transform: rotateY(90deg);
+}
+.girar{
+    animation: girar 5s linear infinite;
+}
+
+
+form{
+    background-color: coral;
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    perspective: 400px;
+}
+label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: transform 4s;
+}
+label:active{
+    transform: translateZ(-60px);
+}
+input{
+    width: 500px;
+}
+.rotar{
+    animation: agitar .2s alternate infinite;
+}
+
+@keyframes girar {
+    0%{
+        transform: rotateY(5deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes agitar{
+    from{
+        transform: rotateZ(2deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}

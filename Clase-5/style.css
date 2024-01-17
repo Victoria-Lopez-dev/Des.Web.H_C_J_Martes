@@ -1,0 +1,27 @@
+img{
+    width: 400px;
+}
+
+svg{
+    width: 400px;
+    height: 400px;
+    border: 2px solid darkgreen;
+}
+
+rect{
+    animation: color 3s 5 alternate;
+}
+.moverLugar{
+    transform: rotate(20deg);
+    transition: 5s;
+}
+@keyframes color {
+    from{
+        fill:aqua;
+        x:22
+    }
+    to{
+        fill: brown; 
+        x:444 
+    }
+}

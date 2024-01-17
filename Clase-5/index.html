@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase -5 </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <img src="./imagenes/hamburger.jpg" alt="">
+    <img src="./imagenes/undraw_snow_games_tq9r.svg" alt="">
+    <svg><!-- 400x400 -->
+        
+        <rect x="290" y="50" width="100" height="100" fill="#F90" stroke="rgb(255,0,0)" stroke-width="6" rx="20">
+
+        </rect>
+
+        <circle  cx="290" cy="133" r="50" stroke="darkblue" stroke-width="6" fill="transparent"></circle>
+
+        <ellipse cx="190" cy="333" rx="50" ry="133"  fill="blue"></ellipse>
+
+        <polygon onclick="mover()" id="poli" points="0 10,30 44,122 55,333 222" stroke="#559844" stroke-width="4"></polygon>
+
+        <polyline points="200 300, 300 350,350 310 ,370 350" fill="gold" stroke="#559844" stroke-width="4"></polyline>
+
+        <line x1="30 " y1="190" x2="130" y2="290" stroke="#333333" stroke-width="3"></line>
+      
+    </svg>
+
+    <!-- svg figuras geometricas : rectangulos - circulos- elipses - lineas - polilineas - poligonos
+    
+    rectangulos -> <rect> : 
+        x,y (coordenadas extremo izq superior del rectangulo)
+        width -height (ancho y alto)
+        fill(relleno color)
+        stroke(border color)
+        stroke-width(grozor del borde)
+        rx(redondeado de bordes)
+
+    circulos -> <circle>
+        cx,cy(coordenadas del centro de la circunferencia)
+        r( radio de la circunferencia)
+        fill|stroke|stroke-width (igual que en rect)
+
+    elipses -> <ellipse>
+        cx,cy(coordenadas del centro de la circunferencia)
+        rx ,ry( radios de la ellipse)
+        fill|stroke|stroke-width (igual que en rect)
+
+    poligono-> <polygon>
+        poinst ( coordenadas de los puntos del poligono que va unir para armar la figura)"xy,xy,xy"
+        fill|stroke|stroke-width (igual que en rect)
+
+    polilinea -> <polyline>
+        poinst ( coordenadas de los puntos del poligono que va unir para armar la figura)"xy,xy,xy"
+        fill|stroke|stroke-width (igual que en rect)
+
+        <animate> | <animateMotion> |<animateTransform>
+    -->
+     <script src="./script.js"></script>
+</body>
+</html>

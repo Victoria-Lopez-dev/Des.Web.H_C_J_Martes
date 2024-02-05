@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase7- Drag and Drop</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="titulo" draggable="true" ondragstart="inicioArrastre(event)" ondragend="elementoSeSolto()" ondrag="elementoEnTraslado()">Drag and Drop</h1>
+    <h2  >Otro titulo</h2>
+
+    <div class="zona-destino">
+        <p>arrastar elemento aqui..</p>
+    </div>
+
+    <button onclick="pulsar()">Enviar..</button>
+    <img  id="imagen" src="./imagenes/cohete.jpg" alt="cohete" ondragstart="inicioArrastre(event)" >
+    <a draggable="false" href="http://www.google.com">Ir a google...</a>
+    <script src="./d&d.js"></script>
+</body>
+</html>
